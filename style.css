@@ -1,0 +1,227 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+body{
+  min-height: 100vh;
+  /* background: url(background\ blue.jpg); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.second-box {
+background-color: rgb(239, 239, 239);
+
+}
+
+
+.title-image img {
+  height: 400px;
+  margin-top: 10px;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  float: left;
+}
+
+.carousel-caption p {
+  color: #ffffff; /* Change the color for the paragraph */
+}
+
+.title-image p {
+margin-top: 30px;
+margin-left: 30px;
+margin-right:30px;
+padding: 12px 8px;
+color: rgb(0, 0, 0);
+}
+nav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above the carousel */
+    background-color: transparent; /* Add transparency if needed */
+    padding: 10px 0; /* Adjust padding */
+  }
+
+  .carousel {
+    position: relative;
+    z-index: 1; /* Make sure it's behind the nav */
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: auto;
+    /* You can add other styling if needed */
+  }
+
+
+nav ul{
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  margin: 0px
+}
+nav li{
+  height: 50px;
+}
+nav a{
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  
+}
+
+
+nav li:first-child{
+  margin-right: auto;
+}
+.sidebar{
+  position: fixed;
+  top: 0; 
+  right: 0;
+  padding: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(22px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.sidebar li{
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+}
+.menu-button{
+  display: none;
+}
+
+
+.empty {
+  height: 400px;
+}
+
+@media(max-width: 800px){
+  .hideOnMobile{
+    display: none;
+  }
+  .menu-button{
+    display: block;
+  }
+
+  .carousel-caption p {
+    font-size: 4vw; /* Smaller font size for medium devices */
+  }
+
+
+}
+@media(max-width: 600px){
+  .sidebar{
+    width: 100%;
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    z-index: 9999;
+
+  }
+  .title-image img {
+    height: 150px;
+    display: inline-block;
+    object-fit: cover;
+  }
+
+  body {
+    font-size: smaller;
+
+  }
+
+ .logo-goes {
+    display: none;;
+  }
+
+  .carousel img {
+    height: auto;
+  }
+
+  .carousel-caption p {
+    font-size: 10px; /* Smaller font size for smaller devices */
+  }
+
+  .carousel-caption h1 {
+    font-size: 15px;
+  }
+
+  .btn {
+    width: 80px;
+  }
+
+  .carousel-caption a {
+    font-size: 10px;
+  }
+
+  .social-icons {
+    display: block;
+    text-align: center;
+  }
+
+  .social-icons li {
+    display: block; /* Make each icon take up full width in the list */
+    margin: 10px 0; /* Add space between the icons */
+  }
+  
+
+  nav a:hover{
+    background-color: #f0f0f0;
+  }
+
+  .footer-content  {
+    width: 100%;
+    padding: 10 0;
+    text-align: center;
+    margin:0 auto;
+
+  }
+  
+  .footer-content h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer-content p {
+    font-size: 12px; /* Adjust font size for readability */
+    margin: 10px 0; /* Adjust spacing between paragraphs */
+  }
+  .container {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  #Quick{
+    display: none;
+  }
+
+  #container {
+    text-align: left;
+  }
+  .bottom-bar p{
+    font-size: 10px;
+  }
+}
