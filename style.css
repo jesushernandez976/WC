@@ -60,6 +60,22 @@ nav{
   }
 
 
+  .first-box {
+    background: url(background\ filler.jpg);
+    background-position: left center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+  }
+
+  .third-box {
+    background: url(background\ filler.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: repeat-y; 
+  }
+
+
+
 nav ul{
   width: 100%;
   list-style: none;
@@ -165,7 +181,7 @@ nav li:first-child{
   }
 
   .carousel-caption h1 {
-    font-size: 15px;
+    font-size: 20px;
   }
 
   .btn {
